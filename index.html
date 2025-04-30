@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Module 1 JavaScript : Dragon Slayer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/dragon-slayer.css">
+
+    <!-- Fonctions utilitaires -->
+    <script src="js/utilities.js"></script>
+
+</head>
+<body>
+<header>
+    <h1>Dragon slayer</h1>
+    <p>Le dernier combat javaScript du Module 1</p>
+</header>
+<main>
+    <div class="game">
+        <h2>Que la fête commence !!</h2>
+        <!-- FORMULAIRE de config -->
+    <form id="game-setup">
+        <fieldset>
+          <legend>Choix de la difficulté</legend>
+          <label>
+            <input type="radio" name="difficulty" value="facile" checked>
+            Facile
+          </label>
+          <label>
+            <input type="radio" name="difficulty" value="normal">
+            Normal
+          </label>
+          <label>
+            <input type="radio" name="difficulty" value="difficile">
+            Difficile
+          </label>
+        </fieldset>
+  
+        <fieldset>
+          <legend>Choix de la classe</legend>
+            <label>
+                <input type="radio" name="playerClass" value="chevalier" checked>
+                chevalier
+            </label>
+            <label>
+                <input type="radio" name="playerClass" value="mage">
+                mage
+            </label>
+            <label>
+                <input type="radio" name="playerClass" value="voleur">
+                voleur
+            </label>
+        </fieldset>
+  
+        <button type="submit">Démarrer le combat !</button>
+      </form>
+
+        <!-- Etat du jeu -->
+        <script src="js/dragon-slayer.js"></script>
+
+        <footer>
+            <h3>Fin de la partie</h3>
+            <figure class="game-end">
+                <figcaption>Vous avez perdu le combat, le dragon vous a carbonisé !</figcaption>
+                <img src="images/dragon-winner.png" alt="Dragon vainqueur">
+            </figure>
+        </footer>
+    </div>
+</main>
+<img src="images/cloud1.png" alt="" id="cloud1" class="cloud">
+<img src="images/cloud2.png" alt="" id="cloud2" class="cloud">
+</body>
+</html>
